@@ -1,0 +1,123 @@
+​html{
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 50px;
+    padding: 0;
+    font-weight: normal;
+    max-width: 100%; /*bonus*/
+    overflow-x: hidden; /*bonus*/
+}
+body{
+    background-color: black;
+}
+.container {
+    background-color: mistyrose;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr 55px;
+    grid-template-areas: 
+    "sidebar    form-content"
+    "footer     footer";
+}
+
+.sidebar {
+    background-image: url(/images/unsplash1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: "sidebar";
+}
+
+
+.form-content {
+    background-image: url(/images/brick-wall.jpg);
+    background-blend-mode: multiply;
+    background-color: rgb(92, 21, 123);
+    grid-area: "form-content";
+    color: #f7cccc;
+    font-family: 'Ranga', cursive;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.form-content input{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #240830;
+    color: #f7cccc;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+.form-content input:focus {
+    background-color:#b51553;
+  }
+
+input[type=submit]{
+    letter-spacing: 2px;
+    font-weight: 900;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+input[type=submit]:hover{
+   
+    letter-spacing: 2px;
+    font-weight: 900;
+    background-color:#ff9c65;
+    color:white;
+
+}
+form{
+    width: 50%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    
+}
+
+header{
+    text-align: center;  font-size: 5rem;
+    font-style: italic;
+    letter-spacing: 2px;
+    color:#b51553;
+}
+
+header h2{
+    font-size: 5rem;
+    font-family: 'Ranga', sans-serif;
+    font-style: italic;
+    color:#f7cccc;
+    
+}
+h3{
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color:#b51553;
+}
+
+a:hover{
+    color:#ff9c65;
+}
+
+
+footer{
+    background: #240830;
+    grid-area: footer; text-align: center;
+    font-size: 1rem;
+    padding-top: 10px;
+}
+footer nav a{
+    color:#f7cccc;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+   
+}
