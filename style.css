@@ -9,115 +9,101 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     overflow-x: hidden; /*bonus*/
 }
 body{
-    background-color: black;
-}
-.container {
-    background-color: mistyrose;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 2fr 55px;
-    grid-template-areas: 
-    "sidebar    form-content"
-    "footer     footer";
+    background-color: rgb(171, 214, 171);
 }
 
-.sidebar {
-    background-image: url(/images/unsplash1.jpg);
+.container{
+    background-image: url("/images/mountain-image.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: "sidebar";
-}
-
-
-.form-content {
-    background-image: url(/images/brick-wall.jpg);
-    background-blend-mode: multiply;
-    background-color: rgb(92, 21, 123);
-    grid-area: "form-content";
-    color: #f7cccc;
-    font-family: 'Ranga', cursive;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-.form-content input{
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0;
-    background-color: #240830;
-    color: #f7cccc;
-    font-weight: bold;
-    border: none;
-    border-radius: 20px;
-}
-.form-content input:focus {
-    background-color:#b51553;
-  }
-
-input[type=submit]{
-    letter-spacing: 2px;
-    font-weight: 900;
+    background-position: center;
+    height: 700px;
     width: 50%;
-    display: block;
     margin: 0 auto;
-    margin-bottom: 30px;
 }
 
-input[type=submit]:hover{
-   
-    letter-spacing: 2px;
-    font-weight: 900;
-    background-color:#ff9c65;
-    color:white;
+/* header start */
 
+.header{
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    width: 500px;
+    padding-top: 20px;
 }
-form{
-    width: 50%;
+.header h1{
+    text-decoration: underline solid yellowgreen;;
     text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+.header h2{
+ font-size: 30px;
+}
+/* header end */
+
+/* registration form start */
+form{
+    margin: 0 auto;
+    color: white;
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
+    font-size: 20px;
     
 }
 
-header{
-    text-align: center;  font-size: 5rem;
-    font-style: italic;
-    letter-spacing: 2px;
-    color:#b51553;
-}
+label input{
+    display: block;
 
-header h2{
-    font-size: 5rem;
-    font-family: 'Ranga', sans-serif;
-    font-style: italic;
-    color:#f7cccc;
-    
 }
-h3{
-    font-size: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-    color:#b51553;
-}
-
-a:hover{
-    color:#ff9c65;
-}
-
-
-footer{
-    background: #240830;
-    grid-area: footer; text-align: center;
-    font-size: 1rem;
-    padding-top: 10px;
-}
-footer nav a{
-    color:#f7cccc;
-    font-family: 'Oswald', sans-serif;
+input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 20px;
     padding: 10px;
-   
+    border: 1px solid black;
+    opacity: 0.4;
+    width: 200px;
+    color:grey;
+    font-weight: bold;
+    
 }
+input:focus {
+    background-color: yellowgreen;
+    color: white;
+    opacity: 0.9;
+  }
+.submit{
+    clear: both;
+    text-align: center;
+}
+input[type=submit]{
+    opacity: 1;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: yellowgreen;
+
+}
+
+.blockA {
+    float: left;
+    width: 50%;
+    margin-left: 15%;
+  }
+  /* registration form end */
+
+  /* login here  */
+ 
+  p{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  a {
+      text-decoration: none;
+      color: yellowgreen;
+      font-weight: bold;
+      
+  }
